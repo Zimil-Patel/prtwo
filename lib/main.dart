@@ -480,6 +480,45 @@ void main() {
 
 //> - - - RichText-2 - - - <<
 
+// class MyApp extends StatelessWidget{
+//
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context ){
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//
+//       home: Scaffold(
+//         appBar: AppBar(
+//           centerTitle: true,
+//           backgroundColor: const Color(0xff2196f3),
+//           title: const Text('RichText Example'),
+//         ),
+//
+//         body:  Center(
+//           child: RichText(
+//             text: const TextSpan(
+//               style: TextStyle(color: Colors.redAccent, fontSize: 28, fontWeight: FontWeight.bold),
+//               children: [
+//                 TextSpan(text: 'Single ', style: TextStyle(color: Color(0xff269df4))),
+//                 TextSpan(text: ' Line ', style: TextStyle(backgroundColor: Color(0xff269df4), color: Colors.white)),
+//                 TextSpan(text: ' Multiple', style: TextStyle(color: Color(0xffff9701), fontFamily: 'CustomFont', letterSpacing: 4)),
+//                 TextSpan(text: '  Style', style: TextStyle(color: Color(0xffe91d63), fontStyle: FontStyle.italic))
+//               ]
+//             ),
+//           )
+//         ),
+//       ),
+//     );
+//   }
+//
+// }
+
+
+//> - - - Custom Text widget user defined function - - - <
+
+
 class MyApp extends StatelessWidget{
 
   const MyApp({super.key});
@@ -490,28 +529,36 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
 
       home: Scaffold(
+        backgroundColor: Colors.black,
         appBar: AppBar(
           centerTitle: true,
           backgroundColor: const Color(0xff2196f3),
-          title: const Text('RichText Example'),
+          titleTextStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.black),
+          title: const Text('Custom TextWidget function'),
         ),
 
         body:  Center(
-          child: RichText(
-            text: const TextSpan(
-              style: TextStyle(color: Colors.redAccent, fontSize: 28, fontWeight: FontWeight.bold),
+            child: Column(
               children: [
-                TextSpan(text: 'Single ', style: TextStyle(color: Color(0xff269df4))),
-                TextSpan(text: ' Line ', style: TextStyle(backgroundColor: Color(0xff269df4), color: Colors.white)),
-                TextSpan(text: ' Multiple', style: TextStyle(color: Color(0xffff9701), fontFamily: 'CustomFont', letterSpacing: 4)),
-                TextSpan(text: '  Style', style: TextStyle(color: Color(0xffe91d63), fontStyle: FontStyle.italic))
-              ]
-            ),
-          )
+                addName('Niraj Chopra', 25, Colors.red),
+                addName('Yuvi', 15, Colors.purple),
+                addName('Jash', 26, Colors.orange),
+                addName('Aqua', 30, Colors.blue),
+                addName('Zimil', 18, Colors.yellow),
+                addName('Vishu', 36, Colors.white)
+              ],
+            )
         ),
       ),
     );
   }
 
+}
+
+
+// custom property-user defined text widget
+
+Text addName(String name, double size, Color color){
+  return Text(name, style: TextStyle(fontSize: size, color: color));
 }
 
