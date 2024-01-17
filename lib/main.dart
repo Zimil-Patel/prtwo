@@ -503,7 +503,7 @@ class MyApp extends StatelessWidget{
               children: [
                 TextSpan(text: 'Single ', style: TextStyle(color: Color(0xff269df4))),
                 TextSpan(text: ' Line ', style: TextStyle(backgroundColor: Color(0xff269df4), color: Colors.white)),
-                TextSpan(text: ' Multiple', style: TextStyle(color: Color(0xffff9701), fontFamily: 'CustomFont')),
+                TextSpan(text: ' Multiple', style: TextStyle(color: Color(0xffff9701), fontFamily: 'CustomFont', letterSpacing: 4)),
                 TextSpan(text: '  Style', style: TextStyle(color: Color(0xffe91d63), fontStyle: FontStyle.italic))
               ]
             ),
@@ -514,3 +514,4 @@ class MyApp extends StatelessWidget{
   }
 
 }
+
