@@ -1,6 +1,6 @@
 {
-    "name": "prtwo",
-    "short_name": "prtwo",
+    "name": "quick_starter",
+    "short_name": "quick_starter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
