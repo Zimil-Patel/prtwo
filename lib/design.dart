@@ -16,502 +16,58 @@ class Design extends StatelessWidget {
         backgroundColor: Colors.blueAccent,),
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    margin: const EdgeInsets.only(
-                        top: 8,),
-                    height: 320,
-                    decoration: const BoxDecoration(
-                        color: Colors.white
-                    ),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 240,
-                              width: 180,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      topRight: Radius.circular(15),
-                                      topLeft: Radius.circular(15)
-                                  )
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              height: 60,
-                              width: 120,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      bottomLeft: Radius.circular(15)
-                                  )
-                              ),
-                            ),
+          child: Container(
+            height: 290,
+            width: 190,
+            color: Colors.white,
+            child: Stack(
+              children: [
+                Container(
+                  height: 220,
+                  width: 170,
+                  decoration: const BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.only(topRight: Radius.circular(10),
+                    topLeft: Radius.circular(10),
+                    bottomRight: Radius.circular(10))
+                  ),
+                ),
 
-                            Container(
-                              height: 50,
-                              width: 50,
-                              margin: const EdgeInsets.only(left: 10,
-                                  top: 10),
-                              decoration: const BoxDecoration(
-                                  color: Colors.deepPurpleAccent,
-                                  borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(15),
-                                    bottomRight: Radius.circular(15),
-                                    topRight: Radius.circular(15),
-                                  )
-                              ),
-                              child: const Center(child: Text('+', style: TextStyle(fontSize: 30, color: Colors.black),)),
-                            )
-                          ],
-                        )
-                      ],
+                Positioned(
+                  top: 220,
+                  child: Container(
+                    height: 50,
+                    width: 125,
+                    decoration: const BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.only(bottomRight: Radius.circular(10))
                     ),
                   ),
-                  Container(
-                    margin: const EdgeInsets.only(
-                      top: 8,),
-                    height: 320,
-                    decoration: const BoxDecoration(
-                        color: Colors.white
-                    ),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 240,
-                              width: 180,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      topRight: Radius.circular(15),
-                                      topLeft: Radius.circular(15)
-                                  )
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              height: 60,
-                              width: 120,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      bottomLeft: Radius.circular(15)
-                                  )
-                              ),
-                            ),
+                ),
 
-                            Container(
-                              height: 50,
-                              width: 50,
-                              margin: const EdgeInsets.only(left: 10,
-                                  top: 10),
-                              decoration: const BoxDecoration(
-                                  color: Colors.deepPurpleAccent,
-                                  borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(15),
-                                    bottomRight: Radius.circular(15),
-                                    topRight: Radius.circular(15),
-                                  )
-                              ),
-                              child: const Center(child: Text('+', style: TextStyle(fontSize: 30, color: Colors.black),)),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    margin: const EdgeInsets.only(
-                      top: 8,),
-                    height: 320,
-                    decoration: const BoxDecoration(
-                        color: Colors.white
-                    ),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 240,
-                              width: 180,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      topRight: Radius.circular(15),
-                                      topLeft: Radius.circular(15)
-                                  )
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              height: 60,
-                              width: 120,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      bottomLeft: Radius.circular(15)
-                                  )
-                              ),
-                            ),
+                Positioned(
+                  left: 124,
+                  top: 217,
+                  child: Container(
+                    alignment: Alignment.center,
+                    height: 70,
+                    width: 70,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
 
-                            Container(
-                              height: 50,
-                              width: 50,
-                              margin: const EdgeInsets.only(left: 10,
-                                  top: 10),
-                              decoration: const BoxDecoration(
-                                  color: Colors.deepPurpleAccent,
-                                  borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(15),
-                                    bottomRight: Radius.circular(15),
-                                    topRight: Radius.circular(15),
-                                  )
-                              ),
-                              child: const Center(child: Text('+', style: TextStyle(fontSize: 30, color: Colors.black),)),
-                            )
-                          ],
-                        )
-                      ],
                     ),
+                    child: Container(
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(10)),
+                      color: Colors.blueAccent),
+                    )
                   ),
-                  Container(
-                    margin: const EdgeInsets.only(
-                      top: 8,),
-                    height: 320,
-                    decoration: const BoxDecoration(
-                        color: Colors.white
-                    ),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 240,
-                              width: 180,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      topRight: Radius.circular(15),
-                                      topLeft: Radius.circular(15)
-                                  )
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              height: 60,
-                              width: 120,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      bottomLeft: Radius.circular(15)
-                                  )
-                              ),
-                            ),
-
-                            Container(
-                              height: 50,
-                              width: 50,
-                              margin: const EdgeInsets.only(left: 10,
-                                  top: 10),
-                              decoration: const BoxDecoration(
-                                  color: Colors.deepPurpleAccent,
-                                  borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(15),
-                                    bottomRight: Radius.circular(15),
-                                    topRight: Radius.circular(15),
-                                  )
-                              ),
-                              child: const Center(child: Text('+', style: TextStyle(fontSize: 30, color: Colors.black),)),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    margin: const EdgeInsets.only(
-                      top: 8,),
-                    height: 320,
-                    decoration: const BoxDecoration(
-                        color: Colors.white
-                    ),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 240,
-                              width: 180,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      topRight: Radius.circular(15),
-                                      topLeft: Radius.circular(15)
-                                  )
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              height: 60,
-                              width: 120,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      bottomLeft: Radius.circular(15)
-                                  )
-                              ),
-                            ),
-
-                            Container(
-                              height: 50,
-                              width: 50,
-                              margin: const EdgeInsets.only(left: 10,
-                                  top: 10),
-                              decoration: const BoxDecoration(
-                                  color: Colors.deepPurpleAccent,
-                                  borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(15),
-                                    bottomRight: Radius.circular(15),
-                                    topRight: Radius.circular(15),
-                                  )
-                              ),
-                              child: const Center(child: Text('+', style: TextStyle(fontSize: 30, color: Colors.black),)),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.only(
-                      top: 8,),
-                    height: 320,
-                    decoration: const BoxDecoration(
-                        color: Colors.white
-                    ),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 240,
-                              width: 180,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      topRight: Radius.circular(15),
-                                      topLeft: Radius.circular(15)
-                                  )
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              height: 60,
-                              width: 120,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      bottomLeft: Radius.circular(15)
-                                  )
-                              ),
-                            ),
-
-                            Container(
-                              height: 50,
-                              width: 50,
-                              margin: const EdgeInsets.only(left: 10,
-                                  top: 10),
-                              decoration: const BoxDecoration(
-                                  color: Colors.deepPurpleAccent,
-                                  borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(15),
-                                    bottomRight: Radius.circular(15),
-                                    topRight: Radius.circular(15),
-                                  )
-                              ),
-                              child: const Center(child: Text('+', style: TextStyle(fontSize: 30, color: Colors.black),)),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    margin: const EdgeInsets.only(
-                      top: 8,),
-                    height: 320,
-                    decoration: const BoxDecoration(
-                        color: Colors.white
-                    ),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 240,
-                              width: 180,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      topRight: Radius.circular(15),
-                                      topLeft: Radius.circular(15)
-                                  )
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              height: 60,
-                              width: 120,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      bottomLeft: Radius.circular(15)
-                                  )
-                              ),
-                            ),
-
-                            Container(
-                              height: 50,
-                              width: 50,
-                              margin: const EdgeInsets.only(left: 10,
-                                  top: 10),
-                              decoration: const BoxDecoration(
-                                  color: Colors.deepPurpleAccent,
-                                  borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(15),
-                                    bottomRight: Radius.circular(15),
-                                    topRight: Radius.circular(15),
-                                  )
-                              ),
-                              child: const Center(child: Text('+', style: TextStyle(fontSize: 30, color: Colors.black),)),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.only(
-                      top: 8,),
-                    height: 320,
-                    decoration: const BoxDecoration(
-                        color: Colors.white
-                    ),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 240,
-                              width: 180,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      topRight: Radius.circular(15),
-                                      topLeft: Radius.circular(15)
-                                  )
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              height: 60,
-                              width: 120,
-                              decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.only(
-                                      bottomRight: Radius.circular(15),
-                                      bottomLeft: Radius.circular(15)
-                                  )
-                              ),
-                            ),
-
-                            Container(
-                              height: 50,
-                              width: 50,
-                              margin: const EdgeInsets.only(left: 10,
-                                  top: 10),
-                              decoration: const BoxDecoration(
-                                  color: Colors.deepPurpleAccent,
-                                  borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(15),
-                                    bottomRight: Radius.circular(15),
-                                    topRight: Radius.circular(15),
-                                  )
-                              ),
-                              child: const Center(child: Text('+', style: TextStyle(fontSize: 30, color: Colors.black),)),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
+                )
+              ],
+            ),
+          )
         ),
       ),
     );
